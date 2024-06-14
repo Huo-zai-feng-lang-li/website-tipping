@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# 执行 npm deploy.sh
+# 执行 ./deploy.就会执行这个脚本
 # 忽略错误
 set -e  #有错误抛出错误
 
@@ -10,7 +10,7 @@ if [ -d "dist" ]; then
 fi
 
 # 构建
-pnpm run build:test  #然后执行打包命令
+pnpm run build  #然后执行打包命令
 
 # 进入待发布的目录
 cd dist  #进到dist目录
