@@ -1,6 +1,9 @@
 #!/usr/bin/env sh
 # 执行 ./deploy.就会执行这个脚本
-# 忽略错误
+git add -A
+git commit -m 'deploy'
+git push
+
 set -e  #有错误抛出错误
 
 # 检查并删除 dist 目录
