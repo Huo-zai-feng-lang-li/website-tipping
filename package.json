@@ -6,9 +6,9 @@
   "scripts": {
     "pnpm:install": "pnpm install && pnpm run dev",
     "dev": "vite --open --port 3009",
-    "build": "vite build",
     "deploy:gitBase": "bash deploy.sh",
-    "deploy:auto-build-pages": "pnpm run build && cd dist && git init && git add -A && git commit -m 'deploy' && git branch -M main-pages && git push -f https://github.com/Huo-zai-feng-lang-li/website-tipping.git main-pages && cd ../ && rmdir /s /q dist"
+    "deploy:auto-build-pages": "rm -rf dist && pnpm run build && cd dist && git init && git add -A && git commit -m 'deploy' && git branch -M main-pages && git push -f https://github.com/Huo-zai-feng-lang-li/website-tipping.git main-pages && cd ../ && rmdir /s /q dist",
+    "build": "vite build"
   },
   "author": "",
   "license": "ISC",
