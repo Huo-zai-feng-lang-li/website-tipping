@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 # 执行 ./deploy.就会执行这个脚本
 git add -A
-git commit -m 'deploy'
+git commit -m 'ci(deploy): update website'
 git push
 
 set -e  #有错误抛出错误
