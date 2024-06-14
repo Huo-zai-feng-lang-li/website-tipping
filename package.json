@@ -4,9 +4,9 @@
   "description": "> 当您倾注心血打造了一个网站或一个完全开源的博客时，总会有那么一刻，您的努力得到了认可。有些人，他们不仅仅是路过的访客，他们对您的作品表示由衷的感谢。",
   "main": "index.js",
   "scripts": {
-    "pnpm:install-&&-dev:3009": "pnpm install && pnpm run dev",
+    "pnpm:install-dev:3009": "pnpm install && pnpm run dev",
     "deploy:gitBase": "bash deploy.sh",
-    "deploy:auto-commit-&&-build-pages": "git add -A && git commit -m 'deploy' && git push && rm -rf dist && pnpm run build && cd dist && git init && git add -A && git commit -m 'deploy' && git branch -M main-pages && git push -f https://github.com/Huo-zai-feng-lang-li/website-tipping.git main-pages && cd ../ && rmdir /s /q dist",
+    "deploy:auto-commit-build-pages": "git add -A && git commit -m 'deploy' && git push && rm -rf dist && pnpm run build && cd dist && git init && git add -A && git commit -m 'deploy' && git branch -M main-pages && git push -f https://github.com/Huo-zai-feng-lang-li/website-tipping.git main-pages && cd ../ && rmdir /s /q dist",
     "build": "vite build",
     "dev": "vite --open --port 3009"
   },
