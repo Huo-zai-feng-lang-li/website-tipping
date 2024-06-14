@@ -4,6 +4,7 @@
   "description": "> 当您倾注心血打造了一个网站或一个完全开源的博客时，总会有那么一刻，您的努力得到了认可。有些人，他们不仅仅是路过的访客，他们对您的作品表示由衷的感谢。",
   "main": "index.js",
   "scripts": {
+    "pnpm:install": "pnpm install && pnpm run dev",
     "dev": "vite --open --port 3009",
     "build": "vite build",
     "deploy:gitBase": "bash deploy.sh",
