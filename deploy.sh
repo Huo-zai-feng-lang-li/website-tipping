@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# 执行 nom deploy.sh
+# 执行 npm deploy.sh
 # 忽略错误
 set -e  #有错误抛出错误
 
