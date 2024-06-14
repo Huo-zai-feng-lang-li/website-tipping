@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-
+# 执行 nom deploy.sh
 # 忽略错误
 set -e  #有错误抛出错误
 
@@ -21,7 +21,7 @@ git commit -m 'deploy'
 # 重命名分支 -M 重命名分支 -u 起一个别名
 git branch -M main-pages
 # 在main分支提交到main-pages分支上
-git push -f https://github.com/huozaifenlangli/Vue3-template.git main-pages
+git push -f https://github.com/Huo-zai-feng-lang-li/website-tipping.git main-pages
 
 cd - # 退回开始所在目录
 
