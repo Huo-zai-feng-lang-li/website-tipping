@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# 执行 ./deploy.就会执行这个脚本
+# 执行 ./deploy.sh 就会执行这个脚本
 git add -A
 git commit -m 'ci(deploy): update website'
 git push
